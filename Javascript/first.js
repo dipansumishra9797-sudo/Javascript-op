@@ -1,3 +1,4 @@
+// conditional statements
 let num = 5;
 
 if(num%2 === 0) {
@@ -54,12 +55,52 @@ else{
 
 console.log("your grade is" ,grade);
 
+// for loop
 for (let i = 1; i <= 10; i++) {
     console.log("Dipansu Mishra");
 }
 
-let sum = 0;
-for( let i = 1; i <= 6; i++){
+let sum = 1;
+for( let i = 0; i <= 5; i++){
     sum = sum + i;
 }
 console.log( "sum =" , sum);
+
+//while loop
+let i = 1;
+while(i<=5){
+    console.log("i =",i)
+    i++
+}
+
+//for - of - loop (string & arrays)
+let str = "Dipansu Mishra";
+let size = 0;
+for( let n of str){ //n is also known as iterator 
+        console.log("n =",n);
+        size++;
+}  
+console.log("Size of string =",size);
+
+//practice questions for loops
+
+// print all even numbers from 0 to 100
+//method 1
+for( let num = 0; num <= 100; num = num+2 ){
+    console.log("number =",num ,"is even");
+}
+
+// method 2(loop + conditional)
+for(let num = 0; num <= 100; num++ ){
+    if(num%2 === 0){
+        console.log("number =", num,"is an even number");
+    }
+}
+
+// game 
+let gameNum = 67;
+let userNum = prompt("Guess the Game Number between 0 10 100");
+while(userNum != gameNum){
+    userNum = prompt("You entered wrong number. Guess again");
+}
+console.log("Congratulations, you entered the right number")
