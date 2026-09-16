@@ -1,5 +1,5 @@
 // conditional statements
-let num = 5;
+/*let num = 5;
 
 if(num%2 === 0) {
     console.log(num + " is an even number.");
@@ -100,7 +100,55 @@ for(let num = 0; num <= 100; num++ ){
 // game 
 let gameNum = 67;
 let userNum = prompt("Guess the Game Number between 0 10 100");
-while(userNum != gameNum){
+while(userNum != gameNum){ 
     userNum = prompt("You entered wrong number. Guess again");
 }
 console.log("Congratulations, you entered the right number")
+
+//strings
+let str = "Dipansu Mishra";
+//str.length (to get the length of th string)
+//str[4] (to get at that num which string is present)
+
+//template literals
+
+//old method to print 
+let obj = {
+    item : "pen",
+    price : 10,
+};
+console.log("price of", obj.item, "is", obj.price, "rupees");
+
+//template method(we have to type a long console command)
+let obj = {
+    item: "pen",
+    price:20,
+}
+ output = `the cost of ${obj.item} is ${obj.price} rupees`;
+console.log(output);
+
+ //Escape character(to break line)
+ console.log("Dipansu Mishra");
+ console.log("Dipansu\nMishra");
+
+//string method
+let str1 = "Dipansu";
+let str2 = "  Mishra";
+//method 1
+console.log(str1.concat(str2));
+//method 2
+console.log(str1+str2);
+
+//replacement in strings
+let str = "hello";
+console.log(str.replace("lo","p"));  //only one value gets changed
+
+let str ="hellololo "
+console.log(str.replaceAll("lo","p"));
+console.log(str[4]); //to find character at a number
+console.log(str.charAt(4));//method 2 
+
+//practice question
+ fullName = prompt("Enter your Full Name with out space");
+output = `@${fullName}${fullName.length}`;
+console.log(output);*/
