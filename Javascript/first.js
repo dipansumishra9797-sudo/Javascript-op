@@ -151,4 +151,48 @@ console.log(str.charAt(4));//method 2
 //practice question
  fullName = prompt("Enter your Full Name with out space");
 output = `@${fullName}${fullName.length}`;
-console.log(output);*/
+console.log(output);
+
+//Array in JS
+
+//Creat arrays
+let num = [94, 59, 82, 85, 93];
+console.log(num);
+console.log(num.length);
+console.log(num[4]);//data at that point
+// arr[3]=55; in array you can change the character but in string you cannot change
+// print num the value of 3rd (85) will change to 55
+// strings are immutable
+// arrays are mutable
+
+//loop over an aray
+let hero= ["ironman", "hulk", "antman", "shaktiman", "spiderman", "krish" ];
+
+//method 1 but is leanthy
+//console.log(hero[0]);
+//console.log(hero[1]); 
+
+//loop method 
+
+//for method
+//for (let i = 0 ; i < hero.length; i++){
+//   console.log(hero[i]);
+//}
+
+//for-of loop
+for( let char of hero){
+    console.log(char);
+}
+
+//example question
+let cities = ["goa", "bhopal", "amritsar", "jammu", "rewa", "bengaluru", "delhi", "pune"];
+
+for(let city of cities){
+    console.log(city.toUpperCase());
+}
+
+let marks = [85,97,44,37,76,60];
+for(let i = 0 ; i < marks.length; i++){
+    i = i + marks[i];
+}
+console.log(i);*/
