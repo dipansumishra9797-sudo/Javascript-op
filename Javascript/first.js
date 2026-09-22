@@ -198,6 +198,11 @@ for(let i = 0 ; i < marks.length; i++){
 }
 console.log(sum);
 let avg = sum/6;
-console.log(avg);*/
+console.log(avg);
 
-
+let price =[250,645,300,900,50];
+for( let i = 0; i < price.length;i++){
+    let updated = price[i]/10;
+    newprice = price[i]-updated;
+    console.log(newprice);
+}*/
