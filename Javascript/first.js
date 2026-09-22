@@ -205,4 +205,49 @@ for( let i = 0; i < price.length;i++){
     let updated = price[i]/10;
     newprice = price[i]-updated;
     console.log(newprice);
-}*/
+}
+
+//Array Method
+
+//PUSH METHOD
+let foodItems = ["potato", "apple", "litchi", "tomato"];
+foodItems.push("Chips", "burger"); //to add at the end
+console.log(foodItems);
+
+
+//pop
+let food = ["potato", "apple", "litchi", "tomato"];
+food.pop();//remove last one
+
+//to string
+let food = ["potato", "apple", "litchi", "tomato"];
+console.log(food);
+console.log(food.toString()); // convert array to string
+
+
+//concat
+let marvelHero = ["ironman", "thor", "hulk"];
+let dcHero = ["superman", "batman"];
+let indHero = ["shaktiman", "krish"]
+let hero = marvelHero.concat(dcHero,indHero);//join two arrays
+console.log(hero); 
+
+//unshift
+//shift
+//both are same as push and pop but the do changes in the starting
+
+//slice
+let hero = ["ironman", "thor", "hulk" ,"superman", "batman"];
+let newHero = hero.slice(1,3); // will give 1 and 2 element and will not include 3
+console.log(newHero); 
+
+let num = [1,2,3,4,5,6,7];
+//num.splice(2,2,101,102,103);//to delete and add characters
+num.splice(3,0,101);//you can also use any one operation also 
+
+//practice question for array methods
+let companies = ["Bloomberg", "Microsoft", "Uber","Google","IBM","Netflix"];
+//companies.shift() //remove first company
+//companies.splice(2,1,"ola"); //remove uber and ad ola
+//companies.push("amazon");//add amazon in the last*/
+
