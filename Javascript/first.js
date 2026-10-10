@@ -263,5 +263,6 @@ let o = {
 console.log(o);
 
 o.age=19;
+o.college="mirai school of technology";
 
 console.log(o);
