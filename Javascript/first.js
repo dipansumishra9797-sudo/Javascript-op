@@ -251,3 +251,17 @@ let companies = ["Bloomberg", "Microsoft", "Uber","Google","IBM","Netflix"];
 //companies.splice(2,1,"ola"); //remove uber and ad ola
 //companies.push("amazon");//add amazon in the last*/
 
+
+
+//code with harry javascript
+
+let o = {
+    //key:value;
+    name:"dipansu",
+    "job code": 5000, //two words key thats why written in the commas
+};
+console.log(o);
+
+o.age=19;
+
+console.log(o);
