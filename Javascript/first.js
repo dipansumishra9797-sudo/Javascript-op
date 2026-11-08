@@ -255,14 +255,221 @@ let companies = ["Bloomberg", "Microsoft", "Uber","Google","IBM","Netflix"];
 
 //code with harry javascript
 
-let o = {
-    //key:value;
-    name:"dipansu",
-    "job code": 5000, //two words key thats why written in the commas
-};
-console.log(o);
+// let o = {
+//     //key:value;
+//     is_handsome:"true",
+//     name:"dipansu",
+//     "job code": 5000, //two words key thats why written in the commas
+// };
+// console.log(o);
 
-o.age=19;
-o.college="mirai school of technology";
+// o.age=19;
+// o.college="mirai school of technology";
 
-console.log(o);
+// console.log(o);
+
+// let age = 24;
+// if(age<18){
+//     console.log("you cannot drive");
+// }
+// else{
+//     console.log("you can drive");
+// }
+
+
+// let a=6;
+// let b=9;
+// let c=a>b?(a-b):(b-a);
+// console.log(c);
+
+//to change one comman thing in many lines like name
+
+// function nice(name){
+//     console.log("Hey",name,"how are you");
+//     console.log("Hey",name,"What are you doing");
+//     console.log("Hey",name,"are you going");
+//     console.log("Hey",name,"have you had your lunch");
+//     console.log("Hey",name,"you are a good boy");
+// };
+// nice("dipansu");
+// nice("Rahul");
+
+// function sum(a,b){
+//     return a+b;
+// };
+// result=sum(4,5);
+// console.log("sum of the integers is = ",result);
+
+// function nice(x){
+//     console.log("hey i am a number : ",x);
+// }
+// nice(33);
+// nice(66);
+// nice(35);
+
+
+
+
+//practice question
+/*create a faulty calculator using js
+it take two numder as an input
+perform wrong operations
+
++ == -
+* == +
+- == /
+/ == *
+
+it performes wrong operations 10% of the time
+*/
+
+// let random = number.random();
+// let a = prompt("Enter your first number");
+// let c = prompt("Enter operation");
+// let b = prompt("Enter your second number");
+
+
+// let obj = {
+//     "+":"-",
+//     "*":"+",
+//     "-":"/",
+//     "/":"*",
+// };
+
+// if(random > 0.1){
+//     //for correct operations
+//     aleart(`the result is ${eval(`${a} ${b} ${c}`)}`)
+// }
+// else{
+//     //for wrong operations 
+//     c = obj[c]
+//     aleart(`the result is ${eval(`${a} ${b} ${c}`)}`)
+// }
+
+
+
+//practice question
+/* create a business name generator by compinint the list below */
+
+// let random = Math.random();
+ // let adj = "crazy amazing fire ";
+ // let shop = "engine foods garments";
+ // let other = "Bros Limited Hub";
+
+// console.log(random);
+
+//arr element square
+
+// let arr = [3,5,7,33];
+// let newarr = [];
+// for(i=0;i<arr.length;i++){
+//     const element= arr[i];
+//     newarr.push(element**3);
+// }
+// console.log(newarr);
+
+// short method for this
+// map function and arrow function
+// let newarr = arr.map((e)=>{
+//     return e**2
+// })
+// console.log(newarr)
+
+//filter function
+// let arr = [3,5,7,33];
+// const greaterThanSeven = (e)=>{
+//     if(e>7){
+//         return true;
+//     }
+//     return false;
+// }
+// console.log(arr.filter(greaterThanSeven));//filter only prints true values
+
+//short method 
+// let arr = [3,5,7,33];
+// let greaterThanSeven = (e)=> e>7;//this itself will give true or false so no need of usinf if and else
+// console.log(arr.filter(greaterThanSeven))
+
+//reduce function perform a series of operation like sum of n product of n
+// let arr = [1,2,3,4,5,6];
+// let ans = (a,b)=>{
+//     return a+b
+// }
+// console.log(arr.reduce(ans)); //sum of all the elements of array
+
+//practice question
+/*write a program to calculate factorial of a number using reduce and for loop */
+
+// let arr = [6,5,4,3,2,1];
+// let product = (a,b)=>{
+//     return a*b
+// }
+// console.log(arr.reduce(product));
+
+// let ans = 1;
+// for(i=0;i<arr.length;i++){
+//     ans = ans*arr[i];
+// }
+// console.log(ans);
+
+//Document object model(DOM)
+// document.title = "Intro to JS";
+// document.body.style.backgroundColor = "green";
+
+
+// let cont = document.body.childNodes[1];
+// console.log(cont);
+// document.getElementById("red").style.backgroundColor = 'red'
+
+
+//DOM practice question
+//asign random color to the 5 boxes
+
+
+//Intertion method 
+// let cont = document.createElement("div");
+// cont.innerHTML = "I have been created by Dipansu Mishra";
+// cont.className = "created";
+// document.querySelector(".container").after(cont);
+// document.body.before(cont);
+// document.querySelector(".container").append(cont);
+// document.querySelector(".container").prepend(cont);
+// let num = document.body.querySelector(".box");
+// num.style.backgroundColor = 'red'
+
+
+// let cont = document.querySelector(".container");
+// cont.insertAdjacentHTML("afterend","Hey guys Dipansu Mishra this side" )
+// let cont = document.getElementById("red");
+// cont.style.backgroundColor = 'red';
+
+//cont.classList.add("blue"); //added class ble to the box having id red;
+// cont.classList.remove("box"); //remove the class box from the box of id red
+
+//cont.classList.toggle("red");//if true make it false and i f false make it true
+
+
+
+//Events In Jvascript
+let cont = document.getElementById("red");
+cont.style.backgroundColor = 'red';
+
+let button = document.getElementById("btn");
+button.addEventListener("click",()=>{
+    alert("Look the message changed");
+    document.querySelector(".para").innerHTML = "My name is <b>Dipansu Mishra </b>";
+
+})
+document.querySelector(".box3").addEventListener("click",()=>{
+    alert("You clicked box3");
+})
+document.querySelector(".box2").addEventListener("click",()=>{
+    alert("You clicked box2");
+})
+document.querySelector(".box1").addEventListener("click",()=>{
+    alert("You clicked box1");
+})
+
+
+
+
